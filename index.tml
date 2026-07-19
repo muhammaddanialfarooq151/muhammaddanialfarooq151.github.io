@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Danial Farooq | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+color:white;
+}
+
+.hero{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:40px;
+}
+
+.container{
+max-width:1200px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.text{
+flex:1;
+}
+
+.text h3{
+font-size:25px;
+color:#93c5fd;
+}
+
+.text h1{
+font-size:60px;
+margin:15px 0;
+}
+
+.text h1 span{
+color:#38bdf8;
+}
+
+.text p{
+font-size:18px;
+color:#d1d5db;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+margin-right:15px;
+border-radius:40px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+color:#0f172a;
+transform:translateY(-4px);
+}
+
+.image{
+flex:1;
+text-align:center;
+}
+
+.image img{
+width:340px;
+height:340px;
+border-radius:50%;
+object-fit:cover;
+border:8px solid #38bdf8;
+box-shadow:0 0 40px #38bdf8;
+}
+
+.about{
+background:white;
+color:#222;
+padding:80px 10%;
+}
+
+.about h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.about p{
+font-size:18px;
+line-height:1.8;
+}
+
+@media(max-width:900px){
+
+.container{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.text h1{
+font-size:42px;
+}
+
+.image img{
+width:250px;
+height:250px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="text">
+
+<h3>Hello, I'm</h3>
+
+<h1><span>Muhammad Danial Farooq</span></h1>
+
+<p>
+BS Computer Science Student at IST Islamabad.<br>
+Passionate Web Developer learning HTML, CSS, JavaScript and building modern websites and applications.
+</p>
+
+<a href="cv.pdf" class="btn">📄 Download CV</a>
+
+<a href="mailto:muhammaddanialfarooq150@gmail.com" class="btn">💼 Hire Me</a>
+
+</div>
+
+<div class="image">
+
+<img src="profile.jpg" alt="Muhammad Danial Farooq">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<h2>About Me</h2>
+
+<p>
+I'm Muhammad Danial Farooq, a Computer Science student with a passion for web development and software engineering. I enjoy creating modern, responsive websites and am currently working on SportBook Pakistan, a sports booking platform. I'm always looking for opportunities to learn, collaborate, and build useful digital products.
+</p>
+
+</section>
+
+</body>
+</html>
