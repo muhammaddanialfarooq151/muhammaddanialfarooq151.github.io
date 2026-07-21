@@ -777,17 +777,23 @@
   });
 
   // ---------- AOS ----------
-  AOS.init({ duration: 900, once: true, easing: 'ease-out-cubic' });
+  if (typeof AOS !== 'undefined') {
+    AOS.init({ duration: 900, once: true, easing: 'ease-out-cubic' });
+  }
 
   // ---------- Typed.js ----------
-  new Typed('#typed', {
-    strings: ['Full Stack Developer', 'React.js Developer', 'Next.js Developer', 'Computer Science Student'],
-    typeSpeed: 55,
-    backSpeed: 30,
-    backDelay: 1400,
-    loop: true,
-    cursorChar: '|'
-  });
+  if (typeof Typed !== 'undefined') {
+    new Typed('#typed', {
+      strings: ['Full Stack Developer', 'React.js Developer', 'Next.js Developer', 'Computer Science Student'],
+      typeSpeed: 55,
+      backSpeed: 30,
+      backDelay: 1400,
+      loop: true,
+      cursorChar: '|'
+    });
+  } else {
+    document.getElementById('typed').textContent = 'Full Stack Developer';
+  }
 
   // ---------- Custom cursor ----------
   const dot = document.querySelector('.cursor-dot');
@@ -865,7 +871,7 @@
       if (start >= target) clearInterval(timer);
     }, stepTime);
   }
- const statsObserver = new IntersectionObserver((entries) => {
+  const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         animateCount(document.getElementById('statProjects'), 7, 1000);
