@@ -865,7 +865,7 @@
       if (start >= target) clearInterval(timer);
     }, stepTime);
   }
-  const statsObserver = new IntersectionObserver((entries) => {
+ const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         animateCount(document.getElementById('statProjects'), 7, 1000);
